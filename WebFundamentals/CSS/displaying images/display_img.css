@@ -1,0 +1,28 @@
+body{
+  height: 1000px;
+  width: 1000px;
+  background-color: beige;
+}
+header{
+  padding: 25px;
+  margin: 25px;
+  text-align: center;
+}
+h1{
+  display: inline-block;
+}
+.tilepic{
+  height: 100px;
+  width: 200px;
+}
+#bix_box{
+  display: inline-block;
+}
+.size{
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+.column1 img {
+  display: block;
+}

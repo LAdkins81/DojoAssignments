@@ -1,0 +1,23 @@
+git init
+git add .
+git commit - m "____"
+
+git status
+git diff (git diff --stat)
+
+git log
+git blame _____
+git clone _____
+
+git remote add origin ______
+
+git push
+
+mkdir
+cd
+
+(recommended)
+git revert -n HEAD 
+git revert -n __first 7 characters in the git log___
+
+git reset <commit hash> --hard (i.e. git reset 6c77676 --hard OR git reset filename.nm --hard)

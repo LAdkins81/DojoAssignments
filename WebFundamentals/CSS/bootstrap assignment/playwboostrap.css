@@ -1,0 +1,11 @@
+.container{
+  background-color: purple;
+  color: white;
+}
+.table-striped{
+  background-color: grey;
+  color: black;
+}
+.table-hover{
+  color: black;
+}

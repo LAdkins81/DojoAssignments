@@ -1,0 +1,145 @@
+body{
+  font-family: sans-serif;
+  background-color: #062134;
+  margin-top: 15px;
+}
+header{
+  color: white;
+  display: inline;
+  margin-left: 40px;
+}
+header h1{
+  width: 300px;
+  display: inline;
+  font-weight: normal;
+}
+.headcolor{
+  color: #1992DE;
+}
+.sepcolor{
+  color: #143953;
+}
+nav{
+  display: inline;
+  height: 100px;
+  width: 300px;
+  margin-left: 100px;
+}
+nav ul{
+  display: inline;
+  text-align: right;
+  padding-left: 270px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 50px 20px 15px;
+}
+#content{
+  background-color: #FFFFFF;
+  margin-left: 5px;
+}
+.mainimg{
+  margin-left: 18px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 1200px;
+  height: 600px;
+}
+.interiorinfo{
+  display: inline-block;
+  height: 260px;
+  width: 370px;
+  background-color: #1468A8;
+  color: white;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.interiorinfo img{
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.interiorinfo h3{
+  display: inline-block;
+  font-weight: normal;
+  font-size: 30px;
+  margin-left: 5px;
+  text-align: center;
+}
+.interiorinfo p{
+  margin-top: 10px;
+}
+.interiorinfo button{
+  background-color: #198ED8;
+  background-image: linear-gradient(0deg, #198ED8 0%, #198ED8 50%, #56B3ED 51%);
+  color: white;
+  border-style: none;
+  padding: 8px 25px 8px 25px;
+  border-radius: 3px;
+  margin-top: 50px;
+  margin-left: 5px;
+}
+.boxinfo{
+  display: inline-block;
+  height: 200px;
+  width: 375px;
+  padding: 7px;
+  margin-top: 20px;
+  margin-left: 15px;
+  vertical-align: top;
+}
+.boxinfo p{
+  font-size: 12px;
+  margin-left: 2px;
+}
+.boxinfo h2{
+  font-weight: normal;
+  font-size: 25px;
+}
+.boxinfo img{
+  width: 375px;
+  height: 200px;
+}
+#midtext{
+  font-size: 12px;
+  padding-top: 100px;
+}
+#midtext a{
+  text-decoration: none;
+  color: #8FAFC6;
+  font-size: 14px;
+}
+#midtext p{
+  margin-top: 22px;
+  padding-bottom: 5px;
+}
+.boxinfo textarea{
+  width: 345px;
+  height: 150px;
+  padding: 20px 15px 0px 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  background-color: #DAEDFF;
+  color: grey;
+  overflow: auto;
+}
+footer{
+  background-color: #DAEDFF;
+  border-top: 1px solid black;
+  padding: 25px 25px 25px 200px;
+}
+footer ul li{
+  list-style-type: none;
+  display: inline;
+  padding: 25px 25px 25px 25px;
+  color: #76A0C1;
+  margin-left: 35px;
+}
+.owncolor{
+  color: #A2CDEF;
+}
