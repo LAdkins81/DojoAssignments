@@ -12,4 +12,4 @@ while (daysUntilMyBday < 6 && daysUntilMyBday > 0){
   console.log(daysUntilMyBday + " DAYS UNTIL MY BIRTHDAY! WOOT!");
   daysUntilMyBday--;
 }
-console.log("HAPPY BIRTHDAY TO ME!");
+console.log("♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪ღ♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•*"+"\n"+"♪ღ♪░H░A░P░P░Y░ B░I░R░T░H░D░A░Y░░♪ღ♪"+"\n"+"/♪*•♪ღ♪*•.¸¸¸.•*¨¨*•.¸¸¸.•*•♪¸.•*¨¨*•.¸¸¸.•*•♪ღ♪•«");
