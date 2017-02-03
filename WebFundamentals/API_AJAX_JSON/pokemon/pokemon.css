@@ -1,0 +1,23 @@
+#wrapper{
+  height: auto;
+  width: 600px;
+  text-align: center;
+  border: 2px solid red;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+}
+#pokedex{
+  display: inline-block;
+  border: 10px solid red;
+  border-width: 60px 25px 60px 25px;
+  padding-bottom: 20px;
+  vertical-align: top;
+  text-align: center;
+  height: 500px;
+  width: 400px;
+  font-family: Arial, sans-serif;
+  position: fixed;
+}
+h2{
+  font-size: 30px;
+}

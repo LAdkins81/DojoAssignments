@@ -1,0 +1,24 @@
+@media screen and (max-width: 480px){
+  #nav {display: none;}
+}
+
+@media screen and (max-width: 800px){
+  .first {width: 33.3333333%}
+  #last {width: 100%;}
+}
+.top{
+  font-size: 1em;
+  font-weight: bold;
+}
+#header{
+  background-color: grey;
+}
+nav ul li{
+    display: inline-block;
+}
+.first{
+  display: inline-block;
+  vertical-align: top;
+  width: 22%;
+  padding-right: 2%;
+}
