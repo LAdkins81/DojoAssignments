@@ -1,0 +1,8 @@
+1. pip install Django: This is the recommended way to install Django; I will be downloading an offical release.
+2. pip list: A list of installed packages including editables. Listed in a case-insensitive order. Has many options including -o, --outdated/-u, --updated/-e, --editable
+3. pip install Django (second time): Requirement already satisfied: Django in c:\users\laura adkins\appdata\local\programs\python\python36-32\lib\site-packages
+4. pip freeze: output installed packages in requirements format ... can generate output suitable for a requirements file and can generate a requirements file and then install from it in another environment
+5. When I pip freeze the requirements.txt and command ls (dir in Windows), it lists the programs on my desktop
+6. I didn't want to uninstall Django, since I had already tried the install/uninstall command with Flask.
+7. pip show Django gave me information about the Django program
+8. pip search Flask gave me tons of information about Flask that I don't really understand yet! It looks like different versions of Flask that people have created and edited...

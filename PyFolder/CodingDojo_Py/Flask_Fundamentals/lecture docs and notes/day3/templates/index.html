@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    </head>
+    <body>
+        <h1>bookface.com</h1>
+        <h2>(don't be fooled by imitations)</h2>
+        {% if session.logged_in %}
+            Hello {{session.username}}<br>
+            <a href="/logout">logout</a>
+        {% else %}
+            <a href="/login">login</a>
+        {% endif %}
+    </body>
+</html>

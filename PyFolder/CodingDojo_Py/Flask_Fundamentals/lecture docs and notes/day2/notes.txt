@@ -1,0 +1,14 @@
+virtualenvs
+
+- setup is only once
+- have a virtualenv for each framework
+    - flask
+    - django
+
+* DO NOT HAVE THE WORD 'python' ON IT'S OWN IN ANY PATH
+* DO NOT HAVE SPACES IN ANY PATH
+* KEEP PYTHON ENVS OUTSIDE OF CODING FOLDER
+
+- when you click on a link it activates the app route
+- when an app route is activated it triggers the associated function
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>This is the first page</h1>
+        <form action="/authenticate" method="POST">
+            <label for="username">Username</label>
+            <input type="text" name="html_username" value="">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="html_password" value="">
+            <br>
+            <br><br>
+            <input type="submit">
+        </form>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for m in messages %}
+                    {{m}}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </body>
+</html>

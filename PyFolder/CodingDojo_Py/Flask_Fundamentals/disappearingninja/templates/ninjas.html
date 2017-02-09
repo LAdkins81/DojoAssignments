@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninjas</title>
+    <style>
+      img{border: 2px solid black; display: block;}
+      button{background-color: grey;}
+    </style>
+  </head>
+  <body>
+    {% if not color %}
+    <a href='/ninjas/blue'><button>Leonardo</button></a>
+    <a href='/ninjas/purple'><button>Donatello</button></a>
+    <a href='/ninjas/red'><button>Raphael</button></a>
+    <a href='/ninjas/orange'><button>Michaelango</button></a>
+    <img src='/static/tmnt.png'>
+    {% endif %}
+
+    {% if color == 'blue' %}
+      <img src="/static/leonardo.jpg">
+    {% elif color == 'orange' %}
+      <img src="/static/michelangelo.jpg">
+    {% elif color == 'red' %}
+      <img src="/static/raphael.jpg">
+    {% elif color == 'purple' %}
+      <img src="/static/donatello.jpg">
+    {% elif valid %}
+      <img src="/static/notapril.jpg">
+    {% endif %}
+
+  </body>
+</html>
