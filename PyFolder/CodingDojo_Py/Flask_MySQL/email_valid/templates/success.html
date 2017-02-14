@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Email Validation</title>
+  </head>
+  <body>
+    <h2>SUCCESS! Your email address - {{email}} - is valid! Thank you!</h2>
+    {% for s in selectors %}
+    <div>
+      {{ s['email'] }} {{ s['created_at']}}
+      <!-- <form action="/delete" method="POST">
+        <input type="submit" name="delete" value="delete">
+      </form> -->
+    </div>
+    {% endfor %}
+  </body>
+</html>

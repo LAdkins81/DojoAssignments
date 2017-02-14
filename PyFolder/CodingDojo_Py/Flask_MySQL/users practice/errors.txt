@@ -1,0 +1,6 @@
+sqlalchemy.exc.ProgrammingError: (_mysql_exceptions.ProgrammingError) (1146, "Table 'mydb.users' doesn't exist") [SQL: u'SELECT * FROM users']
+
+I called the mySQL db "mydbusers"
+
+I also got an error yesterday that port 3306 wasn't running, because I'm running on port 8889.
+So, I changed the port in the mysqlconnection.py file.

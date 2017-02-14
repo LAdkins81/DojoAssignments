@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Wall</title>
+  </head>
+  <body>
+    <h1>Coding Dojo Wall</h1> <h1>Welcome, {{name}}!</h1>
+    <a href='/logout'>logout</a>
+
+    <h2>Post A Message:</h2>
+    <form action='/postroute' method="POST">
+      <textarea name="message"></textarea>
+      <input type="submit" value="post a message"></input>
+    </form>
+    <div id="thewall">
+      {% for s in selectors %}
+      <div>
+        {{ s['first_name'] }}
+        {{ s['created_at'] }} {{ s['messages'] }}
+        <div>
+          {% for c in commresult %}
+            {% if c['message_id'] == s['id'] %}
+              {{ c['first_name'] }} {{ c['created_at'] }} {{ c['comment'] }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <form action='/commentroute/{{s.id}}' method='POST'>
+        <textarea name='comment' value=comments></textarea>
+        <input type="submit" value="post a comment"></input>
+      </form>
+      {% endfor %}
+    </div>
+  </body>
+</html>

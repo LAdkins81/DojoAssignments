@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Code</th>
+        <th>District</th>
+        <th>Population</th>
+      </thead>
+      <tbody>
+        {% for city in cities%}
+        <tr>
+          <td>{{city.name}}</td>
+          <td>{{city.country_code}}</td>
+          <td>{{city.district}}</td>
+          <td>{{city.population}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

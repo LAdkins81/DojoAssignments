@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+  </head>
+  <body>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for m in messages %}
+          <h4>{{ m }}</h4>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <h3><i>If you are already a user...</i></h3>
+    <a href='/authenticate'>CLICK HERE TO LOG IN!</a>
+    <h1>REGISTER</h1>
+    <form action="/submit" method="POST">
+      <h4>Username:</h4>
+      <input type="text" name="user_name" placeholder="user name"></input>  <br>
+      <h4>First Name:</h4>
+      <input type="text" name="first_name" placeholder="first name"></input> <br>
+      <h4>Last Name:</h4>
+      <input type="text" name="last_name" placeholder="last name"></input>  <br>
+      <h4>Email Address:</h4>
+      <input type="text" name="email" placeholder="email address"></input>  <br>
+      <h4>Password:</h4>
+      <input type="password" name="password" placeholder="password"></input>  <br>
+      <h4>Confirm Your Password:</h4>
+      <input type="password" name="confirmpass" placeholder="password confirmation"></input>  <br>
+      <input type="submit" value="Submit"></input>
+    </form>
+  </body>
+</html>

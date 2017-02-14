@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>District</th>
+                <th>Country Code</th>
+                <th>Population</th>
+                <th>Country ID</th>
+            </thead>
+            <tbody>
+                {% for city in cities %}
+                    <tr>
+                        <td>{{city.name}}</td>
+                        <td>{{city.district}}</td>
+                        <td>{{city.country_code}}</td>
+                        <td>{{city.population}}</td>
+                        <td>{{city.country_id}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
