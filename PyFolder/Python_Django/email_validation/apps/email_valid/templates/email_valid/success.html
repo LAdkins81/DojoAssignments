@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Email Validation</title>
+  </head>
+  <body>
+
+    <h1>Congratulations! You have entered - {{eaddress}} - a valid email address! Thank you!</h1>
+
+    <h3>Email addresses entered:</h3>
+    <div>
+      {% for e in email %}
+        {{e.email}} {{e.created_at}}
+      {% endfor %}
+    </div>
+  </body>
+</html>

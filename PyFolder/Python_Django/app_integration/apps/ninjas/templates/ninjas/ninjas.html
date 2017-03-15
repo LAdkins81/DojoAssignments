@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninjas!</title>
+  </head>
+  <body>
+    {% if not key %}
+    {% load staticfiles %}
+    <a href='/ninjas_color/blue'><button>Leonardo</button></a>
+    <a href='/ninjas_color/purple'><button>Donatello</button></a>
+    <a href='/ninjas_color/orange'><button>Michaelangelo</button></a>
+    <a href='/ninjas_color/red'><button>Raphael</button></a>
+    <img src="{% static 'ninjas/images/tmnt.png' %}">
+    {% endif %}
+
+    {% if routecolor == 'blue' %}
+    <img src="{% static 'ninjas/images/leonardo.jpg' %}">
+    {% elif routecolor == 'orange' %}
+    <img src="{% static 'ninjas/images/michelangelo.jpg' %}">
+    {% elif routecolor == 'red' %}
+    <img src="{% static 'ninjas/images/raphael.jpg' %}">
+    {% elif routecolor == 'purple' %}
+    <img src="{% static 'ninjas/images/donatello.jpg' %}">
+    {% elif key %}
+    <img src="{% static 'ninjas/images/notapril.jpg' %}">
+    {% endif %}
+
+  </body>
+</html>

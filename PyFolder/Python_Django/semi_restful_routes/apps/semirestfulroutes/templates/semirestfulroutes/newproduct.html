@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Product</title>
+  </head>
+  <body>
+    <h1>Create a New Product</h1><br>
+    <form action='/products/create' method='POST'>
+      {% csrf_token %}
+      <label>Name:</label><br>
+      <input type='text' placeholder='product name' name='name'/><br>
+      <label>Description:</label><br>
+      <input type='text' placeholder='description' name='description'/><br>
+      <label>Price:</label><br>
+      <input type='text' placeholder='price' name='price'/><br>
+      <input type='submit' value='Create!'/>
+    </form>
+    <a href='/products'>Go Back</a>
+  </body>
+</html>

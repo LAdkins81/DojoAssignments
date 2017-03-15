@@ -1,0 +1,41 @@
+<h1>Ninja Gold</h1>
+
+<h3>Your Gold: <%= session['gold']%></h3>
+
+<form class="location" action="/process/farm" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <h2>Farm</h2>
+  <h4>(Earn 10-20 golds)</h4>
+  <input type="submit" name="farm" value="Find Gold!">
+</form>
+
+<form class="location" action="/process/cave" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <h2>Cave</h2>
+  <h4>(Earn 5-10 golds)</h4>
+  <input type="submit" name="cave" value="Find Gold!">
+</form>
+
+<form class="location" action="/process/house" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <h2>House</h2>
+  <h4>(Earn 2-5 golds)</h4>
+  <input type="submit" name="house" value="Find Gold!">
+</form>
+
+<form class="location" action="/process/casino" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <h2>Casino</h2>
+  <h4>(Earn/takes 0-50 golds)</h4>
+  <input type="submit" name="Casino" value="Find Gold!">
+</form>
+
+<hr>
+
+<h3>Activities:</h3>
+<div class="footer">
+  <%= session['farm']%><br>
+  <%= session['cave']%><br>
+  <%= session['house']%><br>
+  <%= session['casino']%><br>
+</div>

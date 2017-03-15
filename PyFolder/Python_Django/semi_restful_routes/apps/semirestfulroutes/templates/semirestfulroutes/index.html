@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <style>table, th, td {border: 1px solid black}</style>
+  </head>
+  <body>
+    <h1>Products</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for product in myproducts %}
+        <tr>
+          <td>{{product.name}}</td>
+          <td>{{product.description}}</td>
+          <td>{{product.price}}</td>
+          <td><a href='/products/{{product.id}}'>Show</a> <a href='/products/{{product.id}}/edit'>Edit</a> <a href='/products/{{product.id}}/destroy'>Delete</a></td>
+        </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+    <a href='/products/new'>Create a New Product HERE!</a>
+  </body>
+</html>

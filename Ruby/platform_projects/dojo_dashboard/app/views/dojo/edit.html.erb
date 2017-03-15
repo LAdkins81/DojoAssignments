@@ -1,0 +1,17 @@
+
+<h1>Editing <%= @editdojo.city%></h1>
+
+<form action="/dojos/<%= @editdojo.id%>" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<label>Branch</label><br>
+<input type="text" name="dojo[branch]" placeholder="<%=@editdojo.branch%>"><br>
+<label>Street</label><br>
+<input type="text" name="dojo[street]" placeholder="<%=@editdojo.street%>"><br>
+<label>City</label><br>
+<input type="text" name="dojo[city]" placeholder="<%=@editdojo.city%>"><br>
+<label>State</label><br>
+<input type="text" name="dojo[state]" placeholder="<%=@editdojo.state%>"><br>
+
+<input type="submit" value="Update">
+</form>
+<%= link_to "Home", root_path %>

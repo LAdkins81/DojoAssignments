@@ -1,0 +1,26 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/quotes
+ExecStart=/home/ubuntu/------/venv/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/-----/------.sock quotes.wsgi:application
+[Install]
+WantedBy=multi-user.target
+
+sudo vim /etc/nginx/sites-available/------
+
+server {
+  listen 80;
+  server_name 35.166.210.26;
+  location = /favicon.ico { access_log off; log_not_found off; }
+  location /static/ {
+      root /home/ubuntu/-----;
+  }
+  location / {
+      include proxy_params;
+      proxy_pass http://unix:/home/ubuntu/------/-----.sock;
+  }
+}
+sudo ln -s /etc/nginx/sites-available/quotes /etc/nginx/sites-enabled
