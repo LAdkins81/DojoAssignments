@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ninjagold</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style>.location {border: 2px solid black; display: inline-block;}
+  .footer {border: 2px solid black; overflow: scroll}
+  </style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+EDIT - SYNTAX FOR USING PATCH METHOD
+<form action="/users/<%=@user.id%>" method="post">
+  
+<input type="hidden" name="_method" value="patch"/>
+<input name="utf8" type="hidden" value="&#x2713;" />

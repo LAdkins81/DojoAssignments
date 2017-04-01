@@ -1,0 +1,13 @@
+
+
+ERRORS
+
+<% if flash[:errors] %>
+  
+	<% for flash[:errors].each do |e| %>
+    
+		<p><%= e %></p>
+  
+	<% end %>
+
+<% end %>

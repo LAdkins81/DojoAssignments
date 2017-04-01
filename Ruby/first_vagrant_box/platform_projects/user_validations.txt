@@ -1,0 +1,37 @@
+attr_accessor :password_confirmation
+
+EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]+)\z/i
+validates :name, :email, :password, presence: true
+  
+validates :password, length: { minimum: 5 }
+  
+validates :email, format: { with: EMAIL_REGEX }, uniqueness: { case_sensitive: false }
+  
+validate :password_matcher
+
+  
+
+#don't need this if you are using BCrypt
+protected
+  
+def password_matcher
+    
+if self.password != self.password_confirmation
+      
+errors.add(:password_confirmation, "Passwords do not match")
+    
+end
+  
+end
+
+before_validation :downcase_email
+
+  
+private
+
+  
+def downcase_email
+    
+self.email = email.downcase if email.present?
+  
+end

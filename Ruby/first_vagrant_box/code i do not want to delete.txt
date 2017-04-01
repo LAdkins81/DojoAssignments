@@ -1,0 +1,90 @@
+    @match = []
+    @mymatches = Match.where('match_one_id=?', session[:user_id])
+    @mymatches.each do |m|
+      if m.is_match
+        @match << m.match_two
+      end #end if
+    end #end @match loop
+
+  <div class="col-md-5">
+  <!-- main content -->
+  <% if @match %>
+    <% @match.each do |m| %>
+      <p><%= "#{m.first_name} #{m.last_name}"%></p>
+    <% end %>
+  <% end %>
+  </div>
+
+return render json: @match
+
+The site about the join tables: https://www.sitepoint.com/save-multiple-checkbox-values-database-rails/
+  
+
+      <%= f.label "Ethnicity:" %>
+      <% @options['ethnicity'].each do |option| %>
+        <%= f.check_box :ethnicity, :value => option, class: "input-group" %>
+        <%= option %>
+
+      <%= f.label "Interests:" %>
+      <% @options['interests'].each do |option| %>
+        <%= f.check_box :interests, :value => option %>
+        <%= option %>
+      <% end %>
+
+      <%= f.label "Religion:" %>
+      <% @options['religion'].each do |option| %>
+        <%= f.check_box :religion, :value => option %>
+        <%= option %>
+      <% end %>
+
+Ethnicities:
+  - White/Caucasian 
+  - Black/African-American 
+  - Latino/Hispanic 
+  - Native American 
+  - Asian/Asian-American 
+  - Middle Eastern 
+  - Pacific Islander 
+  - East Indian 
+  - Other 
+  - No answer
+
+
+religion:
+  - Christian-Other
+  - Christian-Catholic
+  - Christian-Protestant
+  - Christian-LDS
+  - Muslim/Islam
+  - Spiritual but not religious
+  - Jewish
+  - Buddhist/Taoist
+  - Hindu
+  - Adventist
+  - Atheist
+  - Other
+
+interests:
+  - Camping
+  - Coffee
+  - Cooking
+  - Dining out
+  - Fishing/Hunting
+  - Gardening/Landscaping
+  - Hobbies & Craft
+  - Movies/Videos
+  - Museums/Art
+  - Music/Concerts
+  - Exploring new areas
+  - Nightclubs/Dancing
+  - Performing arts
+  - Playing cards
+  - Playing sports
+  - Politics
+  - Religions/Spirituality
+  - Shopping/Antiques
+  - Travel/Adventure
+  - Videogames
+  - Volunteering
+  - Watching sports
+  - Wine Tasting

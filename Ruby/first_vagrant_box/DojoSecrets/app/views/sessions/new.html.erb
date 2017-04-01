@@ -1,0 +1,13 @@
+<form action="/sessions" method="post">
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label>Email:</label><br>
+  <input type="text" id="Email" name="email" placeholder="email"><br>
+  <label>Password:</label><br>
+  <input type="password" id="Password" name="password" placeholder="password"><br>
+  <input type="submit" name="Log In" value="Log In">
+
+</form>
+
+<p>Don't have an account?</p><a href="/users/new">Register!</a>

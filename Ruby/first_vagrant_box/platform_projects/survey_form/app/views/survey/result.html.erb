@@ -1,0 +1,12 @@
+<h1>Submitted Information</h1>
+
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<h3>Name: <%= @students.name%></h3>
+<h3>Dojo Location: <%= @students.location%></h3>
+<h3>Favorite Language: <%= @students.language%></h3>
+<h3>Comments: <%= @students.comment%></h3>
+
+<a href="/">Go Back</a>

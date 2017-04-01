@@ -1,0 +1,15 @@
+<h1>Edit Your Profile</h1>
+<form action="/users/<%=@user.id%>" method="post">
+  <input type="hidden" name="_method" value="patch"/>
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label>Name:</label><br>
+  <input type="text" id="Name" name="user[name]" placeholder="<%=@user.name%>"><br>
+  <label>Email:</label><br>
+  <input type="text" id="Email" name="user[email]" placeholder="<%=@user.email%>"><br>
+  <label>Password:</label><br>
+  <input type="password" id="Password" name="user[password]" placeholder="password"><br>
+  <label>Confirm Password:</label><br>
+  <input type="password" id="Password_Confirmation" name="user[password_confirmation]" placeholder="confirm password"><br>
+  <input type="submit" name="Update" value="Update">
+</form>
